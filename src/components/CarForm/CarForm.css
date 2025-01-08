@@ -1,0 +1,59 @@
+@import '../../theme.css';
+
+.form-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  overflow: hidden;
+  max-height: 90vh;
+  box-shadow: none;
+}
+
+.form-container label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+}
+
+.form-container .form-input {
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 0.6rem;
+  border: none;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  font-size: 1rem;
+  outline: none;
+  background-color: var(--light-gray);
+  transition: background-color 0.3s ease;
+}
+
+.form-container .form-input:focus {
+  background-color: var(--white);
+}
+
+.form-container .form-button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: var(--border-radius);
+  background: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+
+.form-container .form-button:active {
+  background: var(--primary-color);
+}
